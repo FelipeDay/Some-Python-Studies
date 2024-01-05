@@ -1,0 +1,30 @@
+def gap():
+    print()
+my_foods = ['pizza', 'falael', 'carrot cake']
+# aqui, pedi pra que a variavel "friend_foods" receba uma COPIA da lista "my_foods" ao
+# inves de receber a lista orginal. Assim, podemos mexer nas duas separadamente
+# A lista foi copiada inteira por que nao definimos por qual indice comeca nem termina
+# se quiser copiar so uma parte, defina um comeco ou um fim
+gap()
+print("Criando uma lista e uma copia".upper())
+gap()
+friend_foods = my_foods[:]
+print(f"List of my favourite foods: {my_foods}")
+print(f"List of my friend's favorite foods: {friend_foods}")
+gap()
+print("Acrescentando coisas diferentes nas duas listas".upper())
+gap()
+my_foods.append('cannoli')
+friend_foods.append('ice cream')
+print(f"Added 'cannoli' to my list: {my_foods}")
+print(f"Added 'ice cream' to my friend's list: {friend_foods}")
+gap()
+print("Usando lacos for nas listas".upper())
+gap()
+print("My food list:")
+for mine in my_foods:
+    print(mine)
+gap()
+print("Friend food list:")
+for his in friend_foods:
+    print(his)
