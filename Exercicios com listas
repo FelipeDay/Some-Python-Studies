@@ -1,0 +1,96 @@
+def gap():
+    print()
+
+print("Criando uma lista em Python")
+lista = ['renato', 'cazuza', 'jupiter']
+gap()
+print("lista normal".upper())
+print(lista)
+gap()
+print("Lista ordenada".upper())
+lista.sort()
+print(lista)
+gap()
+print("Lista ordenada e invertida".upper())
+lista.sort(reverse=True)
+print(lista)
+gap()
+print("Lista Invertida".upper())
+lista.reverse()
+print(lista)
+gap()
+removido = lista.pop(1)
+print(f"Ei, {lista[0].capitalize()}, avisa o {lista[1].capitalize()} que o {removido.capitalize()} nao vem!")
+lista.insert(0, 'tim')
+lista.insert(2, 'rita')
+lista.append('erasmo')
+print(f"O {lista[0].capitalize()} acabou de confirmar que vem!")
+print(f"Eita! A {lista[2].capitalize()} ta chegando!")
+print(f"{lista[-1].capitalize()} atrasou, mas ta vindo!")
+gap()
+print(f"A lista tem {len(lista)} convidados:")
+gap()
+for convidados in lista:
+    print(f"Welcome {convidados.capitalize()}", end='. ')
+    print("Fique a vontade!")
+print("obrigado por virem!")
+gap()
+print("Lista com numeros pares".upper())
+even_numbers = list(range(2, 11, 2))
+print(even_numbers)
+gap()
+print("Raiz quadrada de uma lista de forma detalhada".upper())
+squares = []
+for value in range(1, 11):
+    square = value ** 2
+    squares.append(square)
+print(squares)
+gap()
+print("Raiz quadrada de uma lista de forma concisa".upper())
+squares_redux = []
+for value_redux in range(1, 11):
+    squares_redux.append(value_redux**2)
+print(f"Lista original: {squares_redux}")
+gap()
+print("Estatisticas simples com a lista:".upper())
+print(f"Menor N da lista: {min(squares_redux)}")
+print(f"Maior N da lista: {max(squares_redux)}")
+print(f"A soma de todos os N: {sum(squares_redux)}")
+gap()
+print("Lista anterior compressa".upper())
+squares_comp = [value_comp**2 for value_comp in range(1, 11)]
+print(squares_comp)
+gap()
+print("Contando de 1 a 1 milhao".upper())
+lista_num = []
+for teste in range(1, 1000000+1):
+    # lista_pra_onde_vai.append(de_onde_vem)
+    lista_num.append(teste)
+print(f"Memor: {min(lista_num)}")
+print(f"Maior: {max(lista_num)}")
+print(f"Soma geral: {sum(lista_num)}")
+gap()
+print("Contando impares numa lista".upper())
+lista_impar = []
+# igual com numeros pares. Mas para pares comeco com range 2 e para impares com range 1
+for impar in range(1, 30+1, 2):
+    lista_impar.append(impar)
+print(lista_impar)
+gap()
+print("Elevando a terceira potencia (cubo) detalhado".upper())
+cubus = []
+for cubo in range(1, 10+1):
+    # eu PRECISO colocar a iteracao numa lista pra dar certo
+    cubus.append(cubo**3)
+print(cubus)
+gap()
+print("Elevando a terceira potencia (cubo) compressa".upper())
+cubus_redux = [cubo_redux ** 3 for cubo_redux in range(1, 10+1)]
+print(cubus_redux)
+gap()
+print("Exemplo de fatiamento (slicing) de listas".upper())
+print(f"Indices de 0 a 3 da lista 'cubus': {cubus[0:3]}")
+print(f"Indices de 3 a 5 da lista 'cubus': {cubus[3:5]}")
+print(f"Se nao definir onde comeca, o padrao e indice 0: {cubus[:3]}")
+print(f"E se nao definir onde termina, vai ate o final: {cubus[5:]}")
+print(f"Mostrando os ultimos tres indices: {cubus[-3:]}")
