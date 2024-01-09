@@ -1,0 +1,85 @@
+from time import sleep
+
+
+def gap():
+    print()
+
+print("Verifying if certain element is in a list".upper())
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+gap()
+print("Let's, make your pizza!")
+gap()
+for requested_topping in requested_toppings:
+    if requested_topping == 'green peppers':
+        print("Sorry, we are out of green peppers right now.")
+        sleep(1)
+    else:
+        print(f"Adding {requested_topping}...")
+        sleep(1)
+gap()
+print("Finished making your pizza!")
+sleep(1)
+gap()
+print("Verifying if the list is empty".upper())
+gap()
+requested_toppings_2 = []
+if requested_toppings_2:
+    sleep(1)
+    for requested_topping_2 in requested_toppings_2:
+        print(f"Adding {requested_topping_2}.")
+    print("Finished making your pizza!")
+else:
+    print(f"Requested toppings: none")
+    print("Are you sure you want a plain pizza?")
+sleep(1)
+gap()
+print("Verifiying differences between two lists".upper())
+gap()
+avaliable_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+customer_requests = ['mushrooms', 'french fries', 'extra cheese']
+for customer_requested in customer_requests:
+    sleep(1)
+    if customer_requested in avaliable_toppings:
+        print(f"Adding {customer_requested}...")
+        sleep(1)
+    else:
+        print(f"Sorry, we don't have {customer_requested}...")
+        sleep(1)
+print("Finished making your pizza!")
+gap()
+users_db = ['renato', 'cazuza', 'admin', 'jupiter', 'rita']
+for user in users_db:
+    sleep(1)
+    if user == 'admin':
+        print(f"Welcome, {user}, wanna see a status review?")
+    else:
+        print(f"Welcome, {user}! Be my guest")
+gap()
+print("Verifying if a list is empty or not (add an item to see)")
+users = []
+if users:
+    print("there's someone!")
+else:
+    print("there's no one...")
+gap()
+current_users = ['renato', 'cazuza', 'admin', 'jupiter', 'rita'.lower()]
+new_users = ['erasmo', 'admin', 'clara', 'rita', 'gal'.lower()]
+for new_user in new_users:
+    sleep(1)
+    if new_user in current_users:
+        print(f"{new_user.capitalize()} is not avaliable")
+    else:
+        print(f"{new_user.capitalize()} is avaliable!")
+gap()
+print("Let's count positions, from 1st to 9th, okay?")
+num = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+for sufix in num:
+    sleep(1)
+    if '1' in sufix:
+        print(f"{sufix}st")
+    elif '2' in sufix:
+        print(f"{sufix}nd")
+    elif '3' in sufix:
+        print(f"{sufix}rd")
+    else:
+        print(f"{sufix}th")
