@@ -1,0 +1,66 @@
+def gap():
+    print()
+
+
+print("Testing conditions using if & else".upper())
+gap()
+print("Are you in legally age to vote?")
+elector_age = int(input("Please, input your age: "))
+if elector_age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+else:
+    print("Sorry, you are too young to vote.")
+    print("Please register to vote as soon as you turn 18!")
+gap()
+print("A 'raw' example of if, elif & else conditions".upper())
+customer_age = int(input("How old are you? "))
+if customer_age < 4:
+    print("Your admission cost is $0.")
+# note that I'm using only one elif on this example
+elif customer_age < 18:
+    print("Your admission cost is $5.")
+else:
+    print("Your admission cost is $10")
+gap()
+print("A 'refined' example of if, else & elif conditions")
+if customer_age < 4:
+    price = 0
+elif customer_age < 18:
+    price = 5
+# note that this time there's a second elif
+elif customer_age < 65:
+    price = 10
+else:
+    price = 5
+print(f"Ok, your admission cost is ${price}.")
+print("Alternate version of 'refined'. No use of else".upper())
+if customer_age < 4:
+    price = 0
+elif customer_age < 18:
+    price = 5
+# note that this time there's a second elif
+elif customer_age < 65:
+    price = 10
+elif customer_age >= 65:
+    price = 5
+gap()
+print("Verifying if every requested topping is in a list, one by one")
+requested_toppings = ['mushrooms', 'extra cheese']
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms")
+if 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+if 'extra cheese' in requested_toppings:
+    print("Adding extra cheese.")
+    print("Finished making your pizza!")
+gap()
+print("Here, it will stop at first condition met. Because I didn't asked to verify"
+      "all toppings, like the last example. The first condition is enough.")
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms")
+elif 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+elif 'extra cheese' in requested_toppings:
+    print("Adding extra cheese.")
+    print("Finished making your pizza!")
