@@ -1,0 +1,33 @@
+def gap():
+    print()
+
+
+print("Conditional tests with strings".upper())
+gap()
+name = str(input("Input your first name: "))
+gap()
+print(f"'{name}' is writen in capital letter. True or False?\n"
+      f"{name == name.capitalize()}")
+print(f"'{name}' and '{name.capitalize()}' are exactly equal. True or False?\n"
+      f"{name == name.capitalize()}")
+print(f"'{name.lower()}' is right being written in lowercase. True ou False?\n"
+      f"{name.lower() == 'subaru'.capitalize()}")
+print(f"'{name}' is written in uppercase. True ou False?\n"
+      f"{name == name.lower()}")
+gap()
+print("Conditional test with numbers".upper())
+gap()
+num = int(input("Input a number: "))
+gap()
+print(f"{num} is greater than 10. True ou False?\n"
+      f"{num > 10}")
+print(f"{num} is lower than 10. True ou False?\n"
+      f"{num < 10}")
+print(f"{num} is exactly equal to 10. True ou False?\n"
+      f"{num == 10}")
+print(f"{num} is greater or equal than 10. True ou False?\n"
+      f"{num >= 10}")
+print(f"{num} is lower or equal than 10. True ou False?\n"
+      f"{num <= 10}")
+print(f"{num} is a negative number. True ou False?\n"
+      f"{num < 0}")
